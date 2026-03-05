@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #0f172a;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 60px;
+    background: linear-gradient(90deg,#3b82f6,#06b6d4);
+}
+
+section {
+    padding: 40px;
+}
+
+h2 {
+    color: #38bdf8;
+}
+
+.skills li {
+    display: inline-block;
+    background: #1e293b;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 8px;
+}
+
+.project-card {
+    background: #1e293b;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+button {
+    background: #06b6d4;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #3b82f6;
+}
