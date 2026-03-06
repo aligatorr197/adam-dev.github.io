@@ -100,3 +100,7 @@ background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
 color:white;
 font-family: Arial, sans-serif;
 }
+.glass-card:hover{
+transform: translateY(-10px);
+transition:0.3s;
+}
