@@ -1,106 +1,37 @@
-#particles-js{
-position:fixed;
-width:100%;
-height:100%;
-top:0;
-left:0;
-z-index:-1;
-background:#0f172a;
+/* Custom Cursor Base */
+.cursor-dot, .cursor-outline {
+    position: fixed;
+    top: 0; left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 9999;
+    pointer-events: none; /* Crucial: lets you click through the cursor */
 }
-body {
-font-family: Arial, sans-serif;
-margin: 0;
-background: #0f172a;
-color: white;
+.cursor-dot {
+    width: 8px; height: 8px;
+    background-color: #fff;
 }
-
-header {
-text-align: center;
-padding: 60px;
-background: linear-gradient(90deg,#3b82f6,#06b6d4);
+.cursor-outline {
+    width: 40px; height: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    transition: transform 0.2s ease-out, background-color 0.2s ease-out;
 }
 
-section {
-padding: 40px;
+/* Scroll Reveal Base State */
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(50px); /* Starts pushed down */
+    transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
 }
 
-h2 {
-color: #38bdf8;
+/* Scroll Reveal Active State (Added by JS) */
+.is-revealed {
+    opacity: 1;
+    transform: translateY(0);
 }
 
-.skills li {
-display: inline-block;
-background: #1e293b;
-padding: 10px 15px;
-margin: 5px;
-border-radius: 8px;
+/* Typing Cursor Blink */
+.cursor-blink {
+    animation: blink 1s step-end infinite;
 }
-
-.project-card {
-background: #1e293b;
-padding: 20px;
-margin: 10px 0;
-border-radius: 10px;
-}
-
-button {
-background: #06b6d4;
-border: none;
-padding: 10px 20px;
-border-radius: 5px;
-cursor: pointer;
-}
-
-button:hover {
-background: #3b82f6;
-}
-#typing{
-color:#38bdf8;
-font-weight:bold;
-}
-body{
-margin:0;
-font-family:Arial, sans-serif;
-background: linear-gradient(135deg,#0f172a,#020617);
-color:white;
-text-align:center;
-}
-.glass-card{
-background: rgba(255,255,255,0.08);
-border-radius:16px;
-padding:30px;
-margin:30px auto;
-width:80%;
-
-backdrop-filter: blur(12px);
--webkit-backdrop-filter: blur(12px);
-
-border:1px solid rgba(255,255,255,0.2);
-
-box-shadow:0 8px 32px rgba(0,0,0,0.37);
-}
-.glass-btn{
-background: rgba(255,255,255,0.1);
-border:none;
-padding:12px 25px;
-border-radius:10px;
-color:white;
-cursor:pointer;
-
-backdrop-filter: blur(10px);
-border:1px solid rgba(255,255,255,0.3);
-}
-.glass-card:hover{
-transform:translateY(-10px);
-transition:0.4s;
-box-shadow:0 15px 40px rgba(0,255,255,0.3);
-}
-body{
-background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-color:white;
-font-family: Arial, sans-serif;
-}
-.glass-card:hover{
-transform: translateY(-10px);
-transition:0.3s;
-}
+@keyframes blink { 50% { opacity: 0; } }
