@@ -18,3 +18,14 @@ particlesJS("particles-js", {
     }
   }
 });
+var typed = new Typed("#typing", {
+strings: [
+"an Analytical Researcher",
+"a Python Learner",
+"a Future Software Developer",
+"a Data Analyst"
+],
+typeSpeed: 60,
+backSpeed: 40,
+loop: true
+});
