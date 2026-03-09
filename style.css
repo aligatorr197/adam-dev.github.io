@@ -113,11 +113,11 @@ background:linear-gradient(135deg,#4f46e5,#9333ea);
 
 .main-title{
 font-size:64px;
-color:black;
+color:white;
 font-weight:800;
 letter-spacing:4px;
 margin:1;
-font-family:Arial, Helvetica, Times Now Roman, sans-serif;
+font-family:Arial, Helvetica, sans-serif;
 }
 .main-title{
     animation:fadeIn 1.5s ease;
