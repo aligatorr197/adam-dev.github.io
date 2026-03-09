@@ -113,9 +113,9 @@ background:linear-gradient(135deg,#4f46e5,#9333ea);
 
 .main-title{
 font-size:64px;
-color:white;
+color:black;
 font-weight:800;
-letter-spacing:3px;
-margin:0;
-font-family:Arial, Helvetica, sans-serif;
+letter-spacing:4px;
+margin:1;
+font-family:Arial, Helvetica, Times Now Roman, sans-serif;
 }
